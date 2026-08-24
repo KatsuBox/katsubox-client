@@ -26,13 +26,13 @@ export const Banner: React.FC = () => {
         <div className={styles.centerContent}>
           <div className={styles.sparklesTop}>✦ ✧ ✦</div>
           <h1 className={styles.title}>
-            SPIN & COLLECT<br />
-            <span className={styles.highlightTitle}>ACROSS THE MULTIVERSE!</span>
+            ¡GIRA Y COLECCIONA<br />
+            <span className={styles.highlightTitle}>EN EL MULTIVERSO!</span>
           </h1>
           <div className={styles.sparklesBottom}>✦ ✧ ✦</div>
           
           <button className={styles.ctaButton}>
-            START YOUR ADVENTURE!
+            ¡COMIENZA TU AVENTURA!
           </button>
         </div>
 

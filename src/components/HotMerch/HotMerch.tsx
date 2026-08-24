@@ -12,20 +12,20 @@ interface MerchCardItem {
 
 const MOCK_MERCH: MerchCardItem[] = [
   { id: '1', name: 'Jujutsu Kaisen', price: '$59.99', rarity: 'SR', color: 'purple' },
-  { id: '2', name: 'Nezuko Hoodie', price: '$44.50', rarity: 'R', color: 'cyan' },
-  { id: '3', name: 'One Piece Poster', price: '$32.00', rarity: 'SSR', color: 'pink' },
+  { id: '2', name: 'Sudadera Nezuko', price: '$44.50', rarity: 'R', color: 'cyan' },
+  { id: '3', name: 'Póster de One Piece', price: '$32.00', rarity: 'SSR', color: 'pink' },
 ];
 
 export const HotMerch: React.FC = () => {
   return (
     <div className={styles.container} id="merch">
       <div className={styles.header}>
-        <h3 className={styles.title}>HOT MERCHANDISE</h3>
+        <h3 className={styles.title}>PRODUCTOS DESTACADOS</h3>
         <div className={styles.controls}>
-          <button className={styles.navBtn} aria-label="Previous">
+          <button className={styles.navBtn} aria-label="Anterior">
             <ChevronLeft size={16} />
           </button>
-          <button className={styles.navBtn} aria-label="Next">
+          <button className={styles.navBtn} aria-label="Siguiente">
             <ChevronRight size={16} />
           </button>
         </div>
@@ -48,7 +48,7 @@ export const HotMerch: React.FC = () => {
               <span className={styles.price}>{item.price}</span>
             </div>
 
-            <button className={styles.viewBtn}>VIEW ITEM</button>
+            <button className={styles.viewBtn}>VER PRODUCTO</button>
           </div>
         ))}
       </div>

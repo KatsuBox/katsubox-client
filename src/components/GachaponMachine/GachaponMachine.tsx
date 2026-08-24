@@ -6,9 +6,9 @@ import styles from './GachaponMachine.module.css';
 const MOCK_MACHINES: GachaMachine[] = [
   {
     id: 'm1',
-    name: '1. BASIC',
+    name: '1. BÁSICO',
     tier: 1,
-    description: 'Basic Multi-verse pulls',
+    description: 'Tiradas básicas del multiverso',
     image: '',
     items: [],
     tokenCost: 1,
@@ -19,9 +19,9 @@ const MOCK_MACHINES: GachaMachine[] = [
   },
   {
     id: 'm2',
-    name: '2. RARE',
+    name: '2. RARO',
     tier: 2,
-    description: 'Rare character guaranteed',
+    description: 'Personaje raro garantizado',
     image: '',
     items: [],
     tokenCost: 3,
@@ -34,7 +34,7 @@ const MOCK_MACHINES: GachaMachine[] = [
     id: 'm3',
     name: '3. SSR',
     tier: 3,
-    description: 'SSR Legendary loot',
+    description: 'Botín legendario SSR',
     image: '',
     items: [],
     tokenCost: 5,
@@ -54,7 +54,7 @@ export const GachaponMachineSection: React.FC = () => {
         <div className={styles.frameDecorationRight} />
 
         <div className={styles.sectionHeader}>
-          <h2 className={styles.title}>GACHAPON MACHINE</h2>
+          <h2 className={styles.title}>MÁQUINAS GACHAPON</h2>
         </div>
 
         <div className={styles.cardsGrid}>

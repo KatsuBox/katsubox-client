@@ -43,11 +43,11 @@ export const GachaCard: React.FC<GachaCardProps> = ({ machine }) => {
       <div className={styles.cardFooter}>
         <div className={styles.tokenCost}>
           <span className={styles.tokenIcon}>●</span>
-          <span>{machine.tokenCost} Token x{machine.tokenMultiplier}</span>
+          <span>{machine.tokenCost} Ficha{machine.tokenCost > 1 ? 's' : ''} x{machine.tokenMultiplier}</span>
         </div>
 
         <button className={styles.spinButton}>
-          SPIN NOW
+          GIRAR AHORA
         </button>
       </div>
     </div>

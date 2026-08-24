@@ -19,12 +19,12 @@ export const RecentPulls: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3 className={styles.title}>RECENT PULLS</h3>
+        <h3 className={styles.title}>TIRADAS RECIENTES</h3>
         <div className={styles.controls}>
-          <button className={styles.navBtn} aria-label="Previous">
+          <button className={styles.navBtn} aria-label="Anterior">
             <ChevronLeft size={16} />
           </button>
-          <button className={styles.navBtn} aria-label="Next">
+          <button className={styles.navBtn} aria-label="Siguiente">
             <ChevronRight size={16} />
           </button>
         </div>
@@ -32,7 +32,7 @@ export const RecentPulls: React.FC = () => {
 
       <div className={styles.pullsGrid}>
         {/* Left Arrow inside feed if scrollable */}
-        <button className={styles.scrollArrowLeft} aria-label="Scroll left">
+        <button className={styles.scrollArrowLeft} aria-label="Desplazar a la izquierda">
           <ChevronLeft size={16} />
         </button>
 
@@ -53,7 +53,7 @@ export const RecentPulls: React.FC = () => {
         ))}
 
         {/* Right Arrow inside feed */}
-        <button className={styles.scrollArrowRight} aria-label="Scroll right">
+        <button className={styles.scrollArrowRight} aria-label="Desplazar a la derecha">
           <ChevronRight size={16} />
         </button>
       </div>
