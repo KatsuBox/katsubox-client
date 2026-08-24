@@ -3,18 +3,20 @@ import styles from './Banner.module.css';
 
 export const Banner: React.FC = () => {
   return (
-    <section className={styles.bannerSection}>
+    <section className={styles.bannerSection} id="home">
       <div className={styles.bannerContainer}>
-        {/* Left Side Characters Decorative Image / Illustration */}
+        {/* Left Capsule Artwork */}
         <div className={styles.characterLeft}>
           <svg className={styles.svgPlaceholder} viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="80" fill="url(#leftGlow)" opacity="0.3"/>
-            <path d="M60 140 Q100 40 140 140" stroke="#06b6d4" strokeWidth="8" strokeLinecap="round" />
-            <circle cx="80" cy="90" r="12" fill="#ec4899" />
-            <circle cx="120" cy="90" r="12" fill="#a855f7" />
-            <text x="50%" y="80%" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold">SAILOR & GOKU</text>
+            <circle cx="100" cy="100" r="80" fill="url(#capsuleCyanGlow)" opacity="0.3"/>
+            {/* Capsule Shell */}
+            <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="#06b6d4" opacity="0.8" />
+            <path d="M60 100 A40 40 0 0 0 140 100 Z" fill="#0891b2" opacity="0.9" />
+            <rect x="55" y="96" width="90" height="8" rx="4" fill="#ffffff" />
+            <circle cx="100" cy="100" r="6" fill="#ec4899" />
+            <text x="50%" y="85%" textAnchor="middle" fill="#06b6d4" fontSize="12" fontWeight="bold" fontFamily="Audiowide">BASIC CAPSULE</text>
             <defs>
-              <radialGradient id="leftGlow">
+              <radialGradient id="capsuleCyanGlow">
                 <stop offset="0%" stopColor="#06b6d4" />
                 <stop offset="100%" stopColor="transparent" />
               </radialGradient>
@@ -24,28 +26,33 @@ export const Banner: React.FC = () => {
 
         {/* Center Banner Content */}
         <div className={styles.centerContent}>
-          <div className={styles.sparklesTop}>✦ ✧ ✦</div>
+          <div className={styles.badge}>✦ KATSU CAPSULES MVP ✦</div>
           <h1 className={styles.title}>
-            ¡GIRA Y COLECCIONA<br />
-            <span className={styles.highlightTitle}>EN EL MULTIVERSO!</span>
+            DISCOVER YOUR NEXT<br />
+            <span className={styles.highlightTitle}>ANIME TREASURE</span>
           </h1>
-          <div className={styles.sparklesBottom}>✦ ✧ ✦</div>
+          <p className={styles.subtitle}>
+            Cápsulas de colección con figuras y merchandising de anime de valor exclusivo.
+          </p>
           
-          <button className={styles.ctaButton}>
-            ¡COMIENZA TU AVENTURA!
-          </button>
+          <a href="#capsules" className={styles.ctaButton}>
+            DESCUBRIR CÁPSULAS
+          </a>
         </div>
 
-        {/* Right Side Character Decorative Image / Illustration */}
+        {/* Right Capsule Artwork */}
         <div className={styles.characterRight}>
           <svg className={styles.svgPlaceholder} viewBox="0 0 200 200" fill="none">
-            <circle cx="100" cy="100" r="80" fill="url(#rightGlow)" opacity="0.3"/>
-            <path d="M50 150 Q100 30 150 150" stroke="#ec4899" strokeWidth="8" strokeLinecap="round" />
-            <circle cx="100" cy="85" r="16" fill="#eab308" />
-            <text x="50%" y="80%" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold">LUFFY</text>
+            <circle cx="100" cy="100" r="80" fill="url(#capsulePurpleGlow)" opacity="0.3"/>
+            {/* Capsule Shell */}
+            <path d="M60 100 A40 40 0 0 1 140 100 Z" fill="#eab308" opacity="0.9" />
+            <path d="M60 100 A40 40 0 0 0 140 100 Z" fill="#a855f7" opacity="0.8" />
+            <rect x="55" y="96" width="90" height="8" rx="4" fill="#ffffff" />
+            <circle cx="100" cy="100" r="6" fill="#06b6d4" />
+            <text x="50%" y="85%" textAnchor="middle" fill="#eab308" fontSize="12" fontWeight="bold" fontFamily="Audiowide">SSR CAPSULE</text>
             <defs>
-              <radialGradient id="rightGlow">
-                <stop offset="0%" stopColor="#ec4899" />
+              <radialGradient id="capsulePurpleGlow">
+                <stop offset="0%" stopColor="#a855f7" />
                 <stop offset="100%" stopColor="transparent" />
               </radialGradient>
             </defs>
