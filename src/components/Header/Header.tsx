@@ -4,13 +4,11 @@ import styles from './Header.module.css';
 
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeNav, setActiveNav] = useState('Home');
+  const [activeNav, setActiveNav] = useState('HOME');
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Gachapon', href: '#gachapon' },
-    { label: 'Merch', href: '#merch' },
-    { label: 'App', href: '#app' },
+    { label: 'HOME', href: '#home' },
+    { label: 'CAPSULES', href: '#capsules' },
   ];
 
   return (
@@ -20,11 +18,11 @@ export const Header: React.FC = () => {
         <div className={styles.logoSection}>
           <a href="#home" className={styles.logoLink}>
             <span className={styles.logoText}>KATSU BOX</span>
-            <span className={styles.subLogoText}>カツボックス - アニメグッズ & ガチャ</span>
+            <span className={styles.subLogoText}>カツボックス - アニメカプセル</span>
           </a>
         </div>
 
-        {/* Desktop Navigation Navigation Pill */}
+        {/* Desktop Navigation */}
         <nav className={styles.navContainer}>
           <ul className={styles.navList}>
             {navItems.map((item) => (
@@ -43,13 +41,13 @@ export const Header: React.FC = () => {
 
         {/* Action Buttons */}
         <div className={styles.actions}>
-          <button className={styles.loginBtn}>
+          <button className={styles.profileBtn} title="Profile">
             <User size={16} />
-            <span>Login</span>
+            <span>PROFILE</span>
           </button>
-          <button className={styles.cartBtn}>
+          <button className={styles.cartBtn} title="Shopping Cart">
             <ShoppingCart size={16} />
-            <span>Cart</span>
+            <span>CART</span>
           </button>
           <button
             className={styles.mobileMenuToggle}
