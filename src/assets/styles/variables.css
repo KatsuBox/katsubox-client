@@ -1,0 +1,125 @@
+/* ============================================
+   KATSU BOX — Global CSS Variables
+   Anime / Cyberpunk / Neon Design System
+   ============================================ */
+
+:root {
+  /* ── Primary Colors ── */
+  --color-bg: #07050a;
+  --color-bg-alt: #0a0812;
+  --color-surface: #0f0d15;
+  --color-surface-hover: #16131f;
+  --color-surface-elevated: #1a1625;
+
+  /* ── Neon Accents ── */
+  --color-cyan: #06b6d4;
+  --color-cyan-light: #22d3ee;
+  --color-cyan-dark: #0891b2;
+  --color-cyan-glow: rgba(6, 182, 212, 0.4);
+
+  --color-purple: #a855f7;
+  --color-purple-light: #c084fc;
+  --color-purple-dark: #9333ea;
+  --color-purple-glow: rgba(168, 85, 247, 0.4);
+
+  --color-pink: #ec4899;
+  --color-pink-light: #f472b6;
+  --color-pink-dark: #db2777;
+  --color-pink-glow: rgba(236, 72, 153, 0.4);
+
+  --color-green: #22c55e;
+  --color-green-glow: rgba(34, 197, 94, 0.4);
+
+  --color-yellow: #eab308;
+  --color-yellow-glow: rgba(234, 179, 8, 0.4);
+
+  --color-orange: #f97316;
+  --color-orange-glow: rgba(249, 115, 22, 0.4);
+
+  /* ── Text Colors ── */
+  --color-text: #e2e8f0;
+  --color-text-bright: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-text-dim: #64748b;
+
+  /* ── Gradients ── */
+  --gradient-neon: linear-gradient(135deg, var(--color-cyan), var(--color-purple), var(--color-pink));
+  --gradient-cyan-purple: linear-gradient(135deg, var(--color-cyan), var(--color-purple));
+  --gradient-purple-pink: linear-gradient(135deg, var(--color-purple), var(--color-pink));
+  --gradient-surface: linear-gradient(180deg, var(--color-surface), var(--color-bg));
+
+  /* ── Typography ── */
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-3xl: 1.875rem;
+  --fs-4xl: 2.25rem;
+  --fs-5xl: 3rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+  --fw-black: 900;
+
+  /* ── Spacing ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows (Neon Glow) ── */
+  --shadow-cyan: 0 0 10px var(--color-cyan-glow), 0 0 30px rgba(6, 182, 212, 0.15);
+  --shadow-purple: 0 0 10px var(--color-purple-glow), 0 0 30px rgba(168, 85, 247, 0.15);
+  --shadow-pink: 0 0 10px var(--color-pink-glow), 0 0 30px rgba(236, 72, 153, 0.15);
+  --shadow-green: 0 0 10px var(--color-green-glow), 0 0 30px rgba(34, 197, 94, 0.15);
+  --shadow-neon: 0 0 15px var(--color-cyan-glow), 0 0 40px rgba(168, 85, 247, 0.1);
+
+  /* ── Borders ── */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.06);
+  --border-cyan: 2px solid var(--color-cyan);
+  --border-purple: 2px solid var(--color-purple);
+  --border-pink: 2px solid var(--color-pink);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ── Breakpoints (for reference) ── */
+  /* Mobile: 0 - 639px */
+  /* Tablet: 640px - 1023px */
+  /* Desktop: 1024px+ */
+  /* Wide: 1280px+ */
+
+  /* ── Z-index Scale ── */
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-toast: 50;
+
+  /* ── Container ── */
+  --container-max: 1200px;
+  --container-padding: var(--space-lg);
+}
