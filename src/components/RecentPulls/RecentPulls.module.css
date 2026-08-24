@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+}
+
+.navBtn {
+  background: rgba(15, 13, 21, 0.8);
+  border: 1px solid var(--color-purple);
+  color: var(--color-purple);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.navBtn:hover {
+  background: var(--color-purple);
+  color: #ffffff;
+  box-shadow: 0 0 10px var(--color-purple);
+}
+
+.pullsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  position: relative;
+}
+
+.scrollArrowLeft, .scrollArrowRight {
+  background: rgba(15, 13, 21, 0.8);
+  border: 1px solid var(--color-cyan);
+  color: var(--color-cyan);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 2;
+}
+
+.scrollArrowLeft:hover, .scrollArrowRight:hover {
+  background: var(--color-cyan);
+  color: #07050a;
+  box-shadow: 0 0 10px var(--color-cyan);
+}
+
+.pullCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.openCapsule {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: inset 0 -8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.pink {
+  background: radial-gradient(circle at 35% 35%, #f472b6, #ec4899);
+  border: 2px solid #f472b6;
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.5);
+}
+
+.cyan {
+  background: radial-gradient(circle at 35% 35%, #38bdf8, #06b6d4);
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+}
+
+.purple {
+  background: radial-gradient(circle at 35% 35%, #c084fc, #a855f7);
+  border: 2px solid #c084fc;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+}
+
+.characterPlaceholder {
+  font-size: 1.5rem;
+}
+
+.pullInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.rarityBadge {
+  font-family: var(--font-display);
+}
+
+.raritySSR {
+  color: #eab308;
+}
+
+.raritySR {
+  color: #a855f7;
+}
+
+.rarityR {
+  color: #06b6d4;
+}
+
+.itemName {
+  color: #ffffff;
+}
