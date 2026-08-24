@@ -1,5 +1,4 @@
 import React from 'react';
-import { Twitch, Facebook, Instagram } from 'lucide-react';
 import styles from './Footer.module.css';
 
 export const Footer: React.FC = () => {
@@ -26,13 +25,13 @@ export const Footer: React.FC = () => {
         <div className={styles.rightSection}>
           <div className={styles.socialIcons}>
             <a href="#twitch" className={styles.iconLink} aria-label="Twitch">
-              <Twitch size={16} />
+              <span className={styles.socialText}>👾</span>
             </a>
             <a href="#facebook" className={styles.iconLink} aria-label="Facebook">
-              <Facebook size={16} />
+              <span className={styles.socialText}>f</span>
             </a>
             <a href="#instagram" className={styles.iconLink} aria-label="Instagram">
-              <Instagram size={16} />
+              <span className={styles.socialText}>📷</span>
             </a>
             <a href="#tiktok" className={styles.iconLink} aria-label="TikTok">
               <span className={styles.tiktokText}>d</span>

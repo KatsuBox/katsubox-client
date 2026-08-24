@@ -1,5 +1,5 @@
 import React from 'react';
-import { GachaMachine } from '../../types/gachapon';
+import type { GachaMachine } from '../../types/gachapon';
 import styles from './GachaponMachine.module.css';
 
 interface GachaCardProps {
