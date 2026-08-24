@@ -1,0 +1,259 @@
+.section {
+  padding: 1.5rem 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.outerFrame {
+  max-width: var(--container-max);
+  width: 100%;
+  background: rgba(13, 11, 22, 0.9);
+  border: 1px solid rgba(147, 51, 234, 0.4);
+  border-radius: var(--radius-2xl);
+  padding: 2rem;
+  position: relative;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(168, 85, 247, 0.15);
+}
+
+.frameDecorationLeft, .frameDecorationRight {
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 40px;
+  background: var(--color-purple);
+  border-radius: 4px;
+  transform: translateY(-50%);
+  box-shadow: 0 0 10px var(--color-purple);
+}
+
+.frameDecorationLeft {
+  left: 12px;
+}
+
+.frameDecorationRight {
+  right: 12px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.sectionHeader::before, .sectionHeader::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 85, 247, 0.5));
+}
+
+.sectionHeader::before {
+  left: 5%;
+}
+
+.sectionHeader::after {
+  right: 5%;
+  background: linear-gradient(90deg, rgba(168, 85, 247, 0.5), transparent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Card Styling */
+.card {
+  background: #090712;
+  border-radius: var(--radius-xl);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tier Specific Themes */
+.cyanTier {
+  border: 2px solid var(--color-cyan);
+  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3), inset 0 0 15px rgba(6, 182, 212, 0.1);
+}
+
+.purpleTier {
+  border: 2px solid var(--color-purple);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.3), inset 0 0 15px rgba(168, 85, 247, 0.1);
+}
+
+.pinkTier {
+  border: 2px solid var(--color-pink);
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.3), inset 0 0 15px rgba(236, 72, 153, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.tierName {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.stars {
+  color: #eab308;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+}
+
+/* Gachapon Orb Graphic */
+.gachaOrbContainer {
+  margin: 1rem 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbSphere {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.6), inset 10px 10px 20px rgba(255, 255, 255, 0.3);
+}
+
+.cyanTier .orbSphere {
+  background: radial-gradient(circle at 35% 35%, #38bdf8, #0284c7);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+}
+
+.purpleTier .orbSphere {
+  background: radial-gradient(circle at 35% 35%, #c084fc, #7e22ce);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+.pinkTier .orbSphere {
+  background: radial-gradient(circle at 35% 35%, #f472b6, #be185d);
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+}
+
+.orbBand {
+  width: 100%;
+  height: 24px;
+  background: #eab308;
+  border-top: 2px solid #fef08a;
+  border-bottom: 2px solid #ca8a04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+}
+
+.japaneseLabel {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #07050a;
+}
+
+.cardFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tokenCost {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+.tokenIcon {
+  color: var(--color-cyan);
+}
+
+.spinButton {
+  width: 80%;
+  padding: 0.6rem;
+  border-radius: 9999px;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all var(--transition-fast);
+}
+
+.cyanTier .spinButton {
+  border: 1.5px solid var(--color-cyan);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.4);
+}
+
+.purpleTier .spinButton {
+  border: 1.5px solid var(--color-purple);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+}
+
+.pinkTier .spinButton {
+  border: 1.5px solid var(--color-pink);
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.4);
+}
+
+.spinButton:hover {
+  transform: scale(1.05);
+}
+
+.cyanTier .spinButton:hover {
+  background: var(--color-cyan);
+  color: #07050a;
+}
+
+.purpleTier .spinButton:hover {
+  background: var(--color-purple);
+  color: #ffffff;
+}
+
+.pinkTier .spinButton:hover {
+  background: var(--color-pink);
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
