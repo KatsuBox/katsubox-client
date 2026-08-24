@@ -1,0 +1,98 @@
+.summaryContainer {
+  background: rgba(15, 13, 21, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.icon {
+  margin-right: 4px;
+  color: var(--color-cyan);
+  vertical-align: middle;
+}
+
+.value {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.shippingFree {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-green);
+  background: rgba(34, 197, 94, 0.1);
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0.25rem 0;
+}
+
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalLabel {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.totalAmount {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.checkoutBtn {
+  margin-top: 0.5rem;
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--color-pink), var(--color-purple));
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+  transition: all var(--transition-base);
+  letter-spacing: 1px;
+}
+
+.checkoutBtn:hover:not(:disabled) {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(236, 72, 153, 0.7);
+}
+
+.checkoutBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
