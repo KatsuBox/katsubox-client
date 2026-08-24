@@ -1,0 +1,189 @@
+.card {
+  background: rgba(15, 13, 21, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Rarity specific borders & glows */
+.basic {
+  border-color: rgba(6, 182, 212, 0.4);
+}
+.basic:hover {
+  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.25), 0 0 15px var(--color-cyan-glow);
+  border-color: var(--color-cyan);
+}
+.basic .capsuleTop { fill: var(--color-cyan); }
+.basic .capsuleBottom { fill: var(--color-cyan-dark); }
+.basic .glowCircle { fill: var(--color-cyan); }
+.basic .levelBadge { background: var(--color-cyan); color: #07050a; }
+
+.rare {
+  border-color: rgba(168, 85, 247, 0.4);
+}
+.rare:hover {
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.25), 0 0 15px var(--color-purple-glow);
+  border-color: var(--color-purple);
+}
+.rare .capsuleTop { fill: var(--color-purple-light); }
+.rare .capsuleBottom { fill: var(--color-purple); }
+.rare .glowCircle { fill: var(--color-purple); }
+.rare .levelBadge { background: var(--color-purple); color: #ffffff; }
+
+.ssr {
+  border-color: rgba(234, 179, 8, 0.5);
+}
+.ssr:hover {
+  box-shadow: 0 10px 30px rgba(234, 179, 8, 0.3), 0 0 20px var(--color-yellow-glow);
+  border-color: var(--color-yellow);
+}
+.ssr .capsuleTop { fill: var(--color-yellow); }
+.ssr .capsuleBottom { fill: #d97706; }
+.ssr .glowCircle { fill: var(--color-yellow); }
+.ssr .levelBadge { background: var(--color-yellow); color: #07050a; }
+
+/* Badge Header */
+.badgeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--color-text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.levelBadge {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  letter-spacing: 1px;
+}
+
+/* Image Container */
+.imageContainer {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.capsuleSvg {
+  width: 120px;
+  height: 120px;
+  transition: transform var(--transition-base);
+}
+
+.card:hover .capsuleSvg {
+  transform: scale(1.08) rotate(3deg);
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.tagline {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-pink-light);
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.valueRange {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-cyan-light);
+  font-weight: 600;
+  background: rgba(6, 182, 212, 0.1);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+
+/* Card Footer */
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceLabel {
+  font-size: 0.7rem;
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+}
+
+.priceValue {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.ctaButton {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid var(--color-pink);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  letter-spacing: 0.5px;
+}
+
+.card:hover .ctaButton {
+  background: var(--color-pink);
+  color: #07050a;
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+}

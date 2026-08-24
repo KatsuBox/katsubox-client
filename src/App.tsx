@@ -1,8 +1,7 @@
 import React from 'react';
 import { Header } from './components/Header/Header';
 import { Banner } from './components/Banner/Banner';
-import { GachaponMachineSection } from './components/GachaponMachine/GachaponMachine';
-import { HotMerch } from './components/HotMerch/HotMerch';
+import { CapsuleSection } from './components/capsules/CapsuleSection/CapsuleSection';
 import { Footer } from './components/Footer/Footer';
 import styles from './App.module.css';
 
@@ -12,16 +11,7 @@ const App: React.FC = () => {
       <Header />
       <main className={styles.mainContent}>
         <Banner />
-        <GachaponMachineSection />
-        
-        {/* Lower Section: Hot Merch */}
-        <section className={styles.bottomRowSection}>
-          <div className={styles.bottomRowContainer}>
-            <div className={styles.hotMerchWrapper}>
-              <HotMerch />
-            </div>
-          </div>
-        </section>
+        <CapsuleSection />
       </main>
       <Footer />
     </div>
