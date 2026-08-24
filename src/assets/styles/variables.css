@@ -48,9 +48,17 @@
   --gradient-purple-pink: linear-gradient(135deg, var(--color-purple), var(--color-pink));
   --gradient-surface: linear-gradient(180deg, var(--color-surface), var(--color-bg));
 
+  /* ── Capsule Rarity Levels ── */
+  --color-rarity-basic: var(--color-cyan);
+  --color-rarity-basic-glow: var(--color-cyan-glow);
+  --color-rarity-rare: var(--color-purple);
+  --color-rarity-rare-glow: var(--color-purple-glow);
+  --color-rarity-ssr: var(--color-yellow);
+  --color-rarity-ssr-glow: var(--color-yellow-glow);
+
   /* ── Typography ── */
-  --font-display: 'Orbitron', sans-serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-display: 'Audiowide', cursive, sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
